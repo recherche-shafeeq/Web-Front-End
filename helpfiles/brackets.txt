@@ -1,0 +1,12 @@
+Brackets editor notes                          
+command+(click on the places you want selection)--> for multiple selection non conecutive
+alt+shift+up/down/drag(up/down)                 --> for multiple selections consecutive
+command+u                                       --> to undo the last selection u made / 
+                                                    this is not just specific to multiple 
+                                                    selection can be used without it
+command+shift+u                                 --> for redoing a selection
+
+command+b                                       --> for replacing a word/line 
+                                                    for e.g:name "this is a name " also my name
+command+shift+b                                 --> for skipping a selection in replacing a word/line
+command+shift+g                                 --> for selecting all instances of a word/line and replacing them globally

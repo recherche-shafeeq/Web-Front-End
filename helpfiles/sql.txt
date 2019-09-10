@@ -1,0 +1,121 @@
+CREATE DATABASE customers(which is the name);
+DELETE DATABASE customers(which is the name);
+CREAT TABLE customers(
+    variable(column) datatype(INT/VARCHAR(255)),
+    PRIMARY KEY({varible name in this circle backer});
+);
+
+UPDATE customers 
+SET email = "shafeeajad@ouutll.com"
+WHERE id = 3; 
+DELETE customers
+WHERE id = 3;
+
+
+INSERT INTO customers (varible1,variable2) VALUES("value of varible1",2)
+
+                        ##################
+                        ##################
+                        #####Altering#####
+                        ######Table#######
+                        ##################
+                        ##################
+        #adding table
+ALTER TABLE customers
+ADD testCol VARCHAR(255);
+
+        #changing datatype of existing column
+ALTER TABLE customers 
+MODIFY COLUMN testCOl INT(11)
+
+       #deleting table
+ALTER TABLE cutomers    #for removing a column
+DROP COLUMN testCol
+                     
+
+
+                        ###################
+                        ####Selecting######
+                        ###################
+
+
+      #selecting all
+SELECT * FROM cutomers;
+
+      #specific
+SELECT firstName,lastName from cutomers; 
+
+      #more specific
+SELECT * FROM cutomers WHERE id = 3;    #there can be anything in place of                                        #id like firstName but if 2 have                                          #the same then it is going to be
+                                        #a problem and id here is prim key
+
+SELECT * FROM cutomers ORDER BY lastName;
+
+SELECT * FROM cutomers ORDER BY id DESC; #for descending order
+
+SELECT * FROM cutomers ORDER BY id ASC;  #for ascending but also default
+
+SELECT state FROM cutomers;
+
+SELECT DISTINCT state FROM cutomers;    #for avoiding repitition
+
+SELECT * FROM cutomers
+WHERE state IN('KPK','KPKP');
+                        ###################
+                        #####Indexing######
+                        ###################
+
+CREATE INDEX CIndex
+ON cutomers(city)
+
+DROP INDEX CIndex ON cutomers
+
+                         ##################
+                         ###Foreign#keys###
+                         ##################
+
+FOREIGN KEY(varible{productId}) REFERENCES cutomers(id); #prevents data currupti                                                         search the internet for                                                         details
+
+
+                         ###################
+                         #######Joins#######
+                         ###################
+##Joining three tables
+
+SELECT orders.orderNumber , cutomers.id , cutomers.lastName ,products.id
+FROM orders
+  INNER JOIN products
+   ON orders.productId = product.id
+  INNER JOIN cutomers
+   ON orders.customerId = cutomer.id
+ORDER BY orders.id
+
+#left Join
+
+SELECT cutomers.firstName , cutomers.lastName, orders.orderNumber 
+FROM cutomers
+ LEFT JOIN orders
+ ON cutomers.id = orders.customerId
+ORDER BY orders.id
+
+
+                          ####################
+                          #####Aliasing#######
+                          ####################
+
+SELECT cutomers.firstName AS 'fn' ,cutomers.lastName AS 'ln' FROM cutomers	 
+
+SELECT c.firstName , c.lastName , o.id FROM cutomers AS c ,orders AS o;
+
+SELECT CONCAT(firstName,lastName) , address ,city FROM cutomers;
+
+SELECT AVG/count/sum/min/max(age{VARIABLE}) FROM cutomers;
+
+SELECT age,COUNT(age)
+FROM cutomers
+GROUP BY age
+HAVING COUNT(age) >= 2
+
+
+SELECT UCASE(firstName) FROM cutomers; 
+

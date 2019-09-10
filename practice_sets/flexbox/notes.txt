@@ -1,0 +1,13 @@
+--> flexbox is for smaller components while grid is for the whole layout
+
+
+
+
+
+
+properties
+--> display:flex;   to display in flex shape
+--> flex-wrap:wrap; is for placing the elements in more than one line instead of in a single row which is by default
+--> justify-content:flex-start/flex-end/center/space-between/space-around; to horizontally move the whole div to the start/end/center/space-around/space-beteween/stretch (which will fill the available space horizontally).
+--> align-items:flex-start/flex-end/center/space-around/space-between/stretch (which will fill the available space vertically); to vertically move the whole div to the start/end/center/space-around/space-beteween/baseline(the lower borderline of the content of the div which is being moved) to align it with that of other div's.
+but align-items and justify content won't work if the height and width of the flex div is default and which is the space occupied by it (the content inside this div)

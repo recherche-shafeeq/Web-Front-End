@@ -1,0 +1,58 @@
+body > ul {
+    border:3px solid #000;
+}
+//adjacent selectors {}
+
+/*
+ul + p {
+	color:#000;
+	background-color:red;
+}
+*/
+//sibling combinator selector {}
+
+ul ~ p {
+	//color:red;
+    border:3px solid #000;
+}
+//when focused {}
+
+// sudo selectors {}
+
+p:nth-child(3n-1) {
+	color:green;
+}
+textarea:focus {
+	outline:none;
+	border:1px solid royalblue	
+}
+.boo {
+	height: 200px;
+	width: 200px;
+	background: pink;
+	border-radius: 10px;
+	text-align: center;
+	text-height:200px;
+	display:none;
+}
+//really fast as compared to javascript {}
+.peeka:hover + .boo {
+	display: block;
+}
+//pseudo selector {}
+//ul:last-child {
+	border:3px solid #000;
+}
+ul:last-of-type {
+	border:3px solid #000;
+}
+
+//rotating text {}
+//div.a {	
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  //-ms-transform: rotate(20deg); /* IE 9 */ {}
+  //-webkit-transform: rotate(20deg); /* Safari 3-8 */ {}
+  transform: rotate(20deg);
+}

@@ -1,0 +1,26 @@
+min-width Rules applied for any browser width over the value defined in the query
+max-width Rules applied for any browser width below the value defined in the query
+min-height Rules applied for any browser height over the value defined in the query
+max-height Rules applied for any browser height below the value defined in the query
+orientation:portrait Rules applied for any browser where the height is greater than or equal to the width
+orientation:landscape Rules for any browser where the width is greater than the height
+
+Note: There is an important difference between min-width and min-device-width. The value for min-width is based on the size of the browser window, while the value for  min-device-width is based on the size of the display screen for the device.
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {...}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {...}
+
+/* tablets/desktops and up  */
+@media (min-width: 992px) and (max-width: 1199px) {...}
+
+/* large like desktops and up */
+@media screen and (min-width: 1200px) {...}
+/* Change all elements to use border-box */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}

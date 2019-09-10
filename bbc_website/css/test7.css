@@ -1,0 +1,14 @@
+
+.container {
+    margin:0 auto;
+    max-width:80rem;
+}
+.newsSection {
+    display:grid;
+    grid-template-columns:repeat(3  , 1fr);
+    grid-gap:1em;
+    grid-auto-rows: minmax(20px ,auto);
+}
+.newsSection > div > a > div > img {
+    width:100%;
+}

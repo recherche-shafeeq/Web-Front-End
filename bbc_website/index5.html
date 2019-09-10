@@ -1,0 +1,317 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title> BBC | Website </title>
+		<link rel="stylesheet" href="css/style.css">
+	    <meta charset="UTF-8">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+		
+		body {
+		    margin:0;
+			font-family:ReithSans,Arial,Helvetica,freesans,sans-serif;
+		    
+		}
+		
+		#topbar {
+			height:42px;
+			background:#000000;
+			color:white;
+		}
+		
+		.fixedWidth {
+			width:1250px;
+			margin:0 auto;
+			padding-left:122px;
+			padding-right:22px;
+		}
+		
+		#logodiv {
+		    padding:6px 0 0 0;
+			float:left;
+            border-right:1px solid #666;
+            padding-right:13px;
+            height:35px;			
+		}
+			
+		#signindiv {
+		    float:left;
+		    font-size:0.8em;
+			padding:6px 0 0px 20px;
+			border-right:1px solid #666;
+			width:150px;
+			height:35px;
+		}
+
+		#signindiv img {
+		    float:left;
+			padding-left:5px;
+		}
+		
+		#topmenudiv ul li {
+		    padding:12px 18px 12px 18px;
+		    list-style:none;
+			float:left;
+			border-right:1px solid #666;
+			font-family:ReithSans,Arial,Helvetica,freesans,sans-serif;
+			font-weight:700;
+			font-size:0.8em;
+		}
+			
+		#seachdiv input {
+		    margin:10px 18px;
+			padding-left:10px;
+			height:22px;
+			background-image:url('images/search.png');
+			background-repeat:no-repeat;
+			background-position:center right;
+			background-color:#E4E4E4;
+			width:170px;
+		}
+		
+		#more {
+		    float:left;
+			padding-left:0px;
+			margin:0px;
+			border-right:1px solid #666;
+		}
+		
+		#more ul {
+		    margin:0px;
+			padding:0px;
+		}
+		
+		#more ul li {
+		    list-style:none;
+			padding:12px 70px 12px 18px;
+		}
+		
+		#newsbar {
+		    background:#BC2E28;
+			height:90px;
+		}
+		
+		#news {
+		    margin:0px;
+			font-size:2.8em;
+			padding-top:8px;
+			padding-left:0;
+			color:white;
+			font-weight:400;
+		}
+		
+		#break {
+		    clear:both;
+		}	
+		
+		#topicmenu {
+		    margin:0;
+			padding:0;
+		}
+		
+		#topicmenu ul {
+		    margin:0;
+			padding-top:14px;
+			padding-left:0;
+			
+			
+		}
+		
+	    #topicmenu ul li {
+		    list-style:none;
+			float:left;
+			padding-left:9px;
+			padding-right:12px;
+			font-family:Helvetica, Arial, freesans, sans-serif;
+			font-weight:550;
+			color:white;
+			border-right:0.003em solid white;
+			font-size:14px;		
+		    background:#8a0f08;
+		}
+		
+		#date {
+		    color:#8c8c8c;
+			float:right;
+			font-weight:100;
+			font-size:22px;
+			padding-right:42px;
+		}
+		
+		#bold {
+		    font-weight:bold;
+			color:#706f6f;
+		}
+		#welcome {
+		    float:left;
+            font-size:22px;
+            font-weight:700;
+            line-height:22px;
+            color:#4a4a4a;			
+		}
+		#headlines {
+		    font-size:2.5em;
+			font-weight:bold;
+			margin-top:10px;
+		}
+		#headlineimage {
+		    width:600px;
+			float:left;
+		}
+		.newsitem {
+		    position:relative;
+			left:20px;
+			top:-20px;
+			width:270px;
+			float:left;
+			font-size:1.1em;
+			font-weight:400;
+		}
+		.newsitem a {
+		    color:#1F4F82;
+            padding-left:20px;
+			line-height:1.6em;
+		}
+		a {
+		    text-decoration:none;		
+		}
+	    a:hover {
+		    text-decoration:underline;
+		}
+		
+		.video {
+		    background-image:url('images/play.png');
+			background-repeat:no-repeat;
+			background-position:left center;
+			background-size:15px 15px;
+		}
+		.sound {
+		    background-image:url('images/speaker.png');
+			background-repeat:no-repeat;
+			background-position:left center;
+			background-size:15px 15px;
+		}
+		.links {
+		   line-height:1.6em;
+		}
+		#watchlisten {
+		    background-color:#EEEEEE;
+			float:right;
+			width:380px;
+			position:relative;
+			top:-80px;
+			left:35px;
+			right:-20px;
+			height:400px;
+		}
+		</style>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+	   
+	   <div id="container">
+        
+    		<div id="topbar">
+			    
+				<div class="fixedWidth">
+				    
+					<div id="logodiv">
+					    <img src="images/bbc_logo.png">
+					</div>
+					
+					<div id="signindiv">
+					    <img src="images/sign_in.png"><span>Sign In</span>
+					</div>
+				    <div id="topmenudiv">
+                        <ul>
+						    <li>Home</li>
+							<li>News</li>
+							<li>Sports</li>
+							<li>Weather</li>
+							<li>Shop</li>
+							<li>Reel</li>
+							<li>Travel</li>
+							<li>Capital</li>
+						</ul>
+					</div>
+                    <div id	="more">
+					    <ul>
+						    <li>More</li>
+						</ul>
+					</div>
+                    <div id="seachdiv">
+					    <input type="text" placeholder="Search">
+                    </div>					
+				</div>
+				
+				</div>
+				
+                <div class="break"></div>
+			   
+	    	    <div id="newsbar">
+				    
+					<div class="fixedWidth">
+					    
+						<p id="news">NEWS</p>    
+					
+					    <div id="topicmenu">
+					        <ul>
+						        <li>Home</li>
+								<li>Video</li>
+								<li>World</li>
+								<li>Asia</li>
+								<li>UK</li>
+								<li>Business</li>
+								<li>Tech</li>
+								<li>Science</li>
+								<li>Stories</li>
+								<li>Entertainment & Arts </li>
+								<li>Health</li>
+								<li>World New TV</li>
+								<li>In Pictures</li>
+								<li>Reality Check</li>
+								<li>Newsbeat</li>
+								<li>More</li>
+						    </ul>
+				        </div>
+					</div>
+					
+					<div id="break"></div>
+					
+					<div class="fixedWidth">
+					    <p id="welcome">Welcome to BBC.com</p>
+						<p id="date">Tuesday, 9 July</p>
+						<div id="break"></div>
+						<p id="headlines">Pollution to spread across England</p>
+					</div>
+					
+					<div id="break"></div>
+					
+					<div class="fixedWidth">
+					    <img id="headlineimage" src="images/headlineimage.jpeg"/>
+					</div>
+					
+					<div class="newsitem">
+					    <p>Health warnings have been given by the government as pollution is spreading across
+						England is forecast to hit high levels.</p>
+					    <p class="links"><a  class="video" href="#">Why are pollution levels so high?</a>
+	   					    <br>
+					    <a  class="video" href="#">Saharan dust visible on cars</a>
+						
+     						<br>
+						<a  class="video" href="#">How Saharan dust reached the UK
+						What will pollution do to us?</a>
+						<a class="sound" href="#">Air Pollution a 'Serious issue'</a>
+							</p>
+					</div>
+					<div class="fixedWidth">
+					    <div id="watchlisten">
+					        <h2>Watch/Listen</h2>
+					    </div>
+					</div>
+			    </div>
+		
+		<script>
+		</script>
+	</body>
+</html>

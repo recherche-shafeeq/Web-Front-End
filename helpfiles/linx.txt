@@ -1,0 +1,71 @@
+/htop(software for what is going on on the system)
+
+ls -a    --> to show all files including hidden(indicated with dot)
+$        --> shell prompt
+~        --> short for home
+bash     --> for opening bash
+cd       --> without args to go bak to ~
+man (command)--> man mv to get manual for mv ...man ssh
+rm -rf / --> kill the system..to delete all the files in 
+             root recursively forcefully
+ctrl+a   --> go to the start
+ctrl+e   --> go to the end
+#        --> lines hving '#' at the start in terminal not executed
+ctrl^c   --> keyboard interrupt
+ln -s filename filenameLINK  --> giving a pointer to the file to 
+                                 give someone to use this link maybe place                                 it in their home dir and can be opened wi                                 th the link name (filenameLINK)
+head     --> first ten lines
+tail     --> last ten lines
+tail -f  --> follow the file / debugging of log files	
+ctrl+d   --> to close a connection
+shutdown --> 
+shutdown -h           --> h for halt
+shutdown -r           --> r for restart
+shutdown -h/-r +      --> +number of: minutes
+poweroff              --> just to shut down
+init 0/6              --> run levels ..init 6(restart/reboot)  
+w                     --> uptime , current time, no of users ,load average                          0 below TTY means localhost and below IDLE is 
+                          graphica display manager mine is ?xdm
+                          below WHat is what I am running like i3. 
+                          From will have IP addrss if connected through 
+                          ssh and TTY and pts/5 means terminal or virtual                           environments and 5 is number
+
+          ###############
+          ####Script#####
+          ###############
+
+
+
+echo $PATH            --> where to look up for when any thing is run in 
+                          bash (separated by colon) like a dictionary
+which                 --> tell u exactly where the binary for that command                          is like which sudo
+
+
+
+
+PATH=$PATH:(example)/(path)  --> to look in this also appeding(imp) to                                     path
+PATH=(example)/(path):$PATH: --> to look for file first in this directory
+                                 prepending
+                            
+
+                ################################
+info box: but if logged out any path appended or prepended will be gone
+          because it is not hard coded in usr's bash profile like in 
+          ~/.bash_profile
+
+
+
+
+#NOTE
+#use absolute paths for day to day scripting
+#otherwise it will search in the whole system and
+#someone might have a file prepended
+
+
+/\<word/>             --> for searching anything in a vim editor where "word" is the word or line you want to search
+
+
+text.txt | cut -d: -f1     --> where the output of the file will go through the pipe and cut on 
+                               collon which can be any letter or character of search like
+                               (cut -da -f3)where after -f flag there can be any number of field                                you want like 1st,2nd or third etc
+

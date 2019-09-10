@@ -1,0 +1,15 @@
+.container {
+    margin:0 auto;
+    display:flex;
+    justify-content: stretch;
+}
+.container:children()
+.home {
+    background:blue;
+}
+.search {
+    background: red;
+}
+.logout {
+    background:grey;
+}

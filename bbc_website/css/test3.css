@@ -1,0 +1,6 @@
+
+.testdiv > div  {
+     /* you also need to set the width of anything that if a paragraph you want to float it to the right of an image for example*/
+    float:right;
+    width:1000px;
+}

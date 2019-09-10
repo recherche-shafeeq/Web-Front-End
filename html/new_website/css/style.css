@@ -1,0 +1,14 @@
+img{
+    width: 400px;
+	/*-webkit-filter: grayscale(100%);
+	filter: greyscale(100%);*/
+	filter:blur(10px);
+	
+}
+
+img:hover{
+	/*-webkit-filter: grayscale(0%);
+	opacity: 0.5;*/
+	filter:blur(0px);
+	transition: all 0.5s linear;
+}

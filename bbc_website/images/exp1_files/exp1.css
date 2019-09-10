@@ -1,0 +1,30 @@
+*{
+    font-family: Arial,Helvetica,freesans,sans-serif;
+}
+body {
+    margin:0;
+}
+.container {
+    margin:0 auto;
+    padding:0 1rem;
+}
+.upperContent {
+    display:grid;
+    grid-template-columns:repeat(3 , 1fr);
+    grid-gap:1rem;
+    z-index:5445;
+}
+.upperContent > div > a > img {
+    width:100%;
+}
+.showCase {
+    position:relative;
+}
+.showCase > img {
+    position:absolute;
+    bottom:0;
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    z-index:0;
+}

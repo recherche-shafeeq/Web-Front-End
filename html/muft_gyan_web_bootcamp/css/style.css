@@ -1,0 +1,30 @@
+body {
+	margin:0;
+}
+div {
+	background-color: #E4F9F5;
+	padding: 30px;	
+	margin:0;
+	
+}
+div h1{
+	margin:0;
+	padding:0;
+}
+div:nth-child(2)(3){
+	height:30px;
+	width:30px;
+}
+div:nth-child(2){
+	height:30px;
+	width:30px;
+	background-color:red;
+}
+div:nth-child(3){
+	height:30px;
+	width:30px;
+	background-color:blue;
+}
+.talk{
+	text-decoration:underline;
+}

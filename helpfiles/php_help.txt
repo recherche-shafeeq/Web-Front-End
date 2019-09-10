@@ -1,0 +1,27 @@
+      #varibles
+
+->    Prefix $ 
+->    start with a letter or an underscor
+->    only letters,nums and chars
+->    case sensitive
+     
+      #data types    
+->    Strings
+->    Ints
+->    floats
+->    bools
+->    arrays
+->    objects
+->    NULL
+->    Resourse
+
+     #arrays
+
+->    Indexed
+->    Associative
+->    Multi-dimen			:
+->
+->
+->
+->
+->

@@ -1,0 +1,62 @@
+*{
+    font-family: Arial,Helvetica,freesans,sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width:80rem;
+}
+
+.more_around_bbc {
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    grid-gap:16px;
+    background-color:#f6f6f6;
+}
+
+.sidebar > a {
+    display:block;    
+}
+
+.sidebar > a > div > img {
+    float:left;
+    display:inline;
+    height:3.5rem;
+    width:3.5rem;
+    border-radius:1.75rem;
+}
+
+.sidebar > a > div > div {
+    float:right;    
+    display:inline;
+}
+
+.sub  > a {
+    background:white;
+    display:block;
+}
+
+.sub {
+    
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:16px;
+}
+
+.sub > a > img {
+    width:100%;
+}
+
+.main > img {
+    width:100%;
+}
+
+.middleContent > a {
+    display:block;
+    background:white;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/script.js"></script>
+		<style>
+		#body {
+		    grid-template-column:1fr 1fr 1fr;
+			grid-template-rows:1fr 1fr;
+			display:grid;
+		}
+		
+		#box1 {
+		    background-color:blue;
+			grid-column:1/2;
+			height:300px;
+			width:333.33%;
+		}
+		
+		#box2 {
+		    background-color:green;
+			grid-column:2/3;
+			height:300px;
+			width:333.33%;
+		}
+		
+		#box3 {
+		    background-color:orange;
+			height:300px;
+			width:333.33%;
+			grid-column:3/4;
+			grid-rows:2/3;
+		}
+		</style>
+	</head>
+	<body>
+	    <div id="body">
+	        <div id="box1">
+		        <h2>Box1</h2>
+		    </div>
+		    <div id="box2">
+		        <h2>Box2</h2>
+		    </div>
+		    <div id="box3">
+		        <h2>Box3</h2>
+		    </div>
+		</div>
+		<script>
+		</script>
+	</body>
+</html>

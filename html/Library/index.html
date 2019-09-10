@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/script.js"></script>
+		<style>
+		
+		body p {
+		   text-shadow: yellow 0 0 3px , green 4px 4px 10px;
+		}
+		
+		#square li {
+            list-style-type: square;
+			list-style-position: inside; /* outside dot outside and inside list items padding */
+			border:1px solid #000;
+        }
+		
+		#image li {
+		     list-style-image: url(download.png);
+			 font-variant:small caps;//normal
+			/* 
+			    font-size:20px;
+                font-family: Arial, Helveticca, sans-serif;
+				//can also be written as
+                font:20px Arial, Helveticca, sans-serif;
+			*/
+			
+			/*
+			    font-style: normal;
+				font-variant: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 1.5;
+				font-family: Arial, Helvetica, sans-serif;
+				//can be written as 
+				font: normal small-caps 500 20px 1.5 Arial,Helvetica,sans-serif;
+			    //shorthand for font
+			*/
+		}
+		
+		[class*="foo"] {   /* Any class having foo in its class name anywhere in the string */
+            color: red;
+        }
+			
+		[class~="color-red"]{
+		    color:red;
+		}
+		#overlay {
+            position: fixed; /* Sit on top of the page content */
+            display: none; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+			z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+        }
+		</style>
+	</head>
+	<body>
+	    <p>This is a paragraph</p> 
+		<ul id="square">
+            <li>this is a list item with square list indication</li>		
+		</ul>
+		<ul id="image">
+		    <li>connecting an image with this list item</li>
+		</ul>
+		<div class="foo">This is a test class 1 which will be red</div>
+		<div class="123foo">This is a test class 2 which will be red</div>
+		<div class="123fo">This is a test class 2 which won't be red</div>
+		
+		<div class="color-red foo-bar the-div">This will be red</div>
+			 <div id="overlay">buttton for overlay effect</div> 
+        <div class="foobarthediv">This will NOT be red definitely</div>
+		<script>
+		</script>
+	</body>
+</html>

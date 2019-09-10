@@ -1,0 +1,53 @@
+* {
+    margin:0;
+    padding:0;
+}
+.container {
+    height:20px;   
+    display:flex;
+    /*flex-direction:column-reverse;
+    flex-wrap:wrap;  if there is no enough space in the line move to the next line */
+    flex-flow:row wrap;
+    justify-content:space-around;
+    align-items:stretch;
+    
+    /*
+        flex-start   // at the start of the row]
+        flex-end     // at the end of the  row the whole content of the dic
+        space-around // space before and after the content of the div
+        space-between// space between the elements and not before and after the elements
+        center       // just places all the content in the center of the page
+    */
+    /*
+        stretch      // covers the whole of the area available
+        flex-start/flex-endd   // at the start/end of the div
+        flex center
+    */
+}
+.container > div {
+    width:500px;
+}
+.container > div:nth-child(odd){
+    background:blue;
+}
+.container > div:nth-child(even){
+    background:green;   
+}
+.itemlast {
+    /*  order:2; */    
+                 /*
+                     for setting in which order be the div's or elements placed
+                     the one with the highest order will be placed in the last
+                 */
+                 /*
+    flex-grow:4;
+                 */
+    
+    flex-shrink:4;
+    
+    
+}
+.item {
+    /*  order:1;  */
+    flex-grow:1;
+}

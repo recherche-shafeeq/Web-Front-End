@@ -1,0 +1,19 @@
+Faisal [10:09 AM]
+interview question at SOYAKA Artificial Intelligence Science and Technology:
+1) how you use unit testing and if use then on what scale and on which language?
+2) what is firebase event?
+3) what is bigQuery?
+4) what is CDI?
+5) what is different between merge and rebase?
+6) how you ever compiled something from scratch e.g. OpenCv module or linux kernal?
+7) have you work with AWS? if yes then name few services you work with and explain briefly?
+8)  do you have experience with vision side? list few projects you done in vision?
+9) Do you work with Docker? why you use docker in your practical field?
+10) Do you know about POSTMAN? bcz we need this to test our model?
+`Data Science Portion:`
+1) what is overfitting?
+2) what is xavier intialization?
+3) what is transfer learning?
+4) what is convolution part in CNN?
+5) what is SVD(single value decomposition)?
+6) what AWS service you will use for training and deploying the model?

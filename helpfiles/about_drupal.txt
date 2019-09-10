@@ -1,0 +1,6 @@
+
+2 entity types (drupal)
+content(nodes(articles,basic pages),taxonomy, usrs,comments , files))-->non exportable/
+configuration()--> are exporatable,fieldable like in nodes,taxonomy,comments bicz of fieeld API
+Field API (creating fields)(manage fields)-->single and multivaluez
+

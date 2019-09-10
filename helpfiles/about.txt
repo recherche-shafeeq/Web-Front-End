@@ -1,0 +1,4 @@
+no sql data base,easy scaling ,faster,when you have crap load data whn there is no interconnected realationship <--> oppose to relational databases (you need to map out scheema tables,fields and datatypes of fields)
+document databse
+json(java script object notation) like syntax
+
